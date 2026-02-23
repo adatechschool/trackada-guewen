@@ -1,6 +1,6 @@
 📦 Modalités de rendu
 Vous pouvez développer en local sur votre ordinateur, mais pensez à push régulièrement sur la branche main du repository git.
-
+Vérifier que les dossiers des projets existent au bon endroit et sont correctement nommés
 ⚠️ Important : Vous devez avoir poussé (git push) votre dernier commit la veille de la soutenance à minuit au plus tard, afin qu’il soit pris en compte pour l’évaluation.
 
 🎯 Objectif du projet
@@ -46,7 +46,7 @@ les bases du JavaScript
 
 [ ] Charger et parser en JSON le fichier track.json
 [ ] Vérifier que le dossier ada existe dans le dossier home (~)
-[ ] Vérifier que les dossiers des projets existent au bon endroit et sont correctement nommés
+[ ]Vérifier que les dossiers des projets existent au bon endroit et sont correctement nommés
 [ ] Vérifier que les projets sont bien initialisés comme des projets git
 [ ] Vérifier que chaque projet contient bien les fichiers requis au bon endroit (le tableau required dans track.json)
 [ ] Générer le bon affichage pour la commande à partir des informations ci-dessus
