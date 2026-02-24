@@ -12,12 +12,28 @@ console.log(trackPath);
 
 const data = readFileSync("track.json", "utf-8");
 const parsedData = JSON.parse(data);
-console.log(parsedData);
 
-for (const i of parsedData.projects) {
+const adaPath = join(homePath, "ADA");
+
+if (existsSync(adaPath)) {
+  console.log("✅ dossier ada");
+} else {
+  console.log("❌ dossier ada");
+}
+
+for (const project of parsedData.projects) {
   if (existsSync(homePath)) {
     console.log("oui");
   } else {
     console.log("non");
+
+    const gitPath = join(projectPath, ".git");
+
+    if (!existsSync(gitPath)) {
+      console.log("git n'est pas initialisé");
+    } else {
+      console.log(`❌ dossier du projet ${project.name}`);
+      console.log("- le dossier n'existe pas ou n'est pas nommé correctement");
+    }
   }
 }
