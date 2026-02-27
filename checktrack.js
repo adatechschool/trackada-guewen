@@ -90,7 +90,7 @@ const blue = "\x1b[34m";
 const Magenta = "\x1b[35m";
 const Cyan = "\x1b[36m";
 
-let successCount = 0; // nombre de projets avec initialisé
+let successCount = 0; // nombre de projets initialisé
 let totalCount = 0; // nombre total de projets
 
 // On parcourt les projets pour calculer le pourcentage
@@ -128,7 +128,7 @@ function getResultMessage(successCount, totalCount) {
     icon = "❌";
   }
 
-  // Retourne le message final(en vert)
+  // envoie le message final(en vert)
   return `\x1b[32m${icon} ${percentage}% des projets sont initialisés correctement (${successCount}/${totalCount})\x1b[0m`;
 }
 
